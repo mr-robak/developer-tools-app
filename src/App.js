@@ -3,6 +3,7 @@ import "./App.css";
 import { useSelector } from "react-redux";
 import { selectLoggedinUser } from "./store/selectors";
 import ResourcesSection from "./components/ResourcesSection";
+import AddResourceForm from "./components/AddResourceForm";
 
 const selectDevs = (state) => {
   return state.developers;
@@ -116,6 +117,7 @@ function App() {
       </h3>
       <ul>{renderFavoritesPerDev}</ul>
       <ResourcesSection />
+      <AddResourceForm />
     </div>
   );
 }

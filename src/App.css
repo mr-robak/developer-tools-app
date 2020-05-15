@@ -5,3 +5,20 @@
   height: 25px;
   background-color: rgb(212, 212, 212);
 }
+
+.type {
+  font-style: italic;
+}
+
+.tag {
+  margin: 2px;
+  padding: 0.3em;
+
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(200, 200, 200);
+  border-radius: 9px;
+  font-size: smaller;
+
+  color: rgb(90, 90, 90);
+}

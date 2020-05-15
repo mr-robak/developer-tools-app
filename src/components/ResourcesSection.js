@@ -10,13 +10,15 @@ export default function ResourcesSection() {
   const renderResources = resources.map((resource) => {
     const { id, name, tags, type, url } = resource;
     return (
-      <div>
+      <div key={id}>
         <p>
           <strong>{name}</strong> <span className="type">({type})</span> — find
-          out more at {url}
+          out more at <a href={url}>{url} </a>
         </p>
         {tags.map((tag) => (
-          <span className="tag">{tag}</span>
+          <span key={Date.now()} className="tag">
+            {tag}
+          </span>
         ))}
       </div>
     );
